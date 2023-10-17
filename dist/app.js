@@ -12,13 +12,6 @@ const secrets_1 = require("./config/secrets");
 const cors_1 = __importDefault(require("cors"));
 (0, mongoose_1.setupMongoose)(secrets_1.MONGO_URI);
 const app = (0, express_1.default)();
-app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
-    res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-    next();
-});
 (0, express_2.setupExpress)(app);
 (0, routes_1.setupRoutesV1)(app);
 // TODO: configure CORS
