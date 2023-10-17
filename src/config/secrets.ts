@@ -36,8 +36,8 @@ if (missingSecrets.length > 0) {
 
 export const MONGO_URI =
   NODE_ENV === PRODUCTION || NODE_ENV === STAGING
-    ? `mongodb://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DATABASE}?authSource=admin`
-    : `mongodb://${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DATABASE}`;
+    ? `mongodb+srv://ashishbhungani:FfFWhGBU1Sdm@cluster0.gep5p.mongodb.net/${process.env.MONGO_DATABASE}`
+    : `mongodb+srv://ashishbhungani:FfFWhGBU1Sdm@cluster0.gep5p.mongodb.net/${process.env.MONGO_DATABASE}`;
 
 // export const REDIS_URI = `redis://${process.env.REDIS_HOST}:${process.env.REDIS_PORT}`;
 

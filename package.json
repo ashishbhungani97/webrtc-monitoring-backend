@@ -32,8 +32,8 @@
     "build-image": "docker-compose build --force-rm"
   },
   "dependencies": {
-    "@meetrix/webrtc-monitoring-common-lib": "git+https://github.com/meetrix/webrtc-monitoring-common-lib",
-    "@peermetrics/webrtc-stats": "github:buddhikajay/webrtc-stats",
+    "@meetrix/webrtc-monitoring-common-lib": "git+https://github.com/meetrix/webrtc-monitoring-common-lib.git",
+    "@peermetrics/webrtc-stats": "git+https://github.com/buddhikajay/webrtc-stats.git",
     "@socket.io/redis-adapter": "^7.1.0",
     "@types/swagger-ui-express": "^4.1.2",
     "axios": "^0.27.2",
